@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+
+.introduce {
+  background: $color-stone;
+  min-height: 100vh;
+  color: $color-white;
+  font-size: 20px;
+  text-align: center;
+  padding: 100px 0;
+}
