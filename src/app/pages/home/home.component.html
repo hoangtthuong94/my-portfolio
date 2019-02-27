@@ -1,5 +1,8 @@
 <app-menu></app-menu>
 <section class="introduce">
+  <iframe src="../../../assets/bird/index.html">
+  </iframe>
+
   <!--<div class="card-wrap">
     <div class="my-card" (click)="isShowCard = !isShowCard" [ngClass]="{'flipped': isShowCard}">
       <figure class="front">
@@ -26,8 +29,8 @@
     </div>
   </div>-->
 
-  <div class="container">
-    <div class="avatar"></div>
+  <div class="content">
+    <!--<div class="avatar"></div>-->
     <div class="text">
       <h2>Hello, I'm <b>Huong</b></h2>
       <div #typedStrings>
@@ -39,3 +42,14 @@
     </div>
   </div>
 </section>
+
+<div class="sound-switcher" [ngClass]="isSoundOn ? 'sound-on' : 'sound-off' " (click)="changeSound()">
+  <div>
+    <img class="sound-pulse" src="../../../assets/images/pulse-sound.svg">
+    <i class="icon-sound fas fa-volume-up"></i>
+    <i class="icon-sound fas fa-volume-off"></i>
+  </div>
+</div>
+
+<audio class="birds-loop loop" src="../../../assets/bird/libs/birds-loop.mp3" loop #soundBird></audio>
+

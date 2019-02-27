@@ -1,0 +1,57 @@
+:host {
+  display: block;
+}
+
+.clock-wrap {
+  display: block;
+  font-family: 'Old Standard TT', serif;
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#clock {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.digit-group {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-right: 20px;
+
+  &:not(:last-child) {
+    &:after {
+      content: ':';
+      font-size: 45px;
+      position: absolute;
+      right: 0;
+      line-height: 1;
+      bottom: 0;
+      width: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.digit {
+  width: 36px;
+
+  .digit-number {
+    color: hsla(0, 0%, 100%, 0.1);
+    transform: rotate(-90deg);
+    transition: font-size 200ms, transform 350ms, color 150ms;
+
+    &.highlight {
+      color: inherit;
+      font-size: 30px;
+      transform: rotate(0deg);
+    }
+  }
+}
