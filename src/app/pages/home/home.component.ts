@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   @ViewChild('typedStrings') typedStrings: ElementRef;
   @ViewChild('typed') typed: ElementRef;
 
+  isShowCard = false;
+
   constructor() {
   }
 

@@ -57,3 +57,37 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+@mixin transform($value){
+  transform: $value;
+  -webkit-transform: $value;
+}
+
+@mixin translateX($value){
+  transform: translateX($value);
+  -webkit-transform: translateX($value);
+}
+
+@mixin translateY($value){
+  transform: translateY($value);
+  -webkit-transform: translateY($value);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}

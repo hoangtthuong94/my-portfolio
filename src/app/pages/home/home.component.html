@@ -1,9 +1,41 @@
+<app-menu></app-menu>
 <section class="introduce">
-  <div #typedStrings>
-    <p>Hello, I'm <b>Huong</b></p>
-    <p>Hihi</p>
-    <p>Haha</p>
-  </div>
+  <!--<div class="card-wrap">
+    <div class="my-card" (click)="isShowCard = !isShowCard" [ngClass]="{'flipped': isShowCard}">
+      <figure class="front">
+        <img src="http://www.jboeijenga.nl/img/back.jpg" alt="back">
+        <div class="caption">
+          <h2>Hoang <span>Huong</span></h2>
+          <p>Front end developer</p>
+        </div>
+      </figure>
 
-  <span #typed></span>
+      <figure class="back">
+        <img src="http://www.jboeijenga.nl/img/back.jpg" alt="back">
+        <div class="caption">
+          <dl>
+            <dt>Phone</dt>
+            <dd>012 345 6789</dd>
+            <dt>Email</dt>
+            <dd>hoangtthuong94@gmail.com</dd>
+            <dt>Web</dt>
+            <dd>www.hello.com</dd>
+          </dl>
+        </div>
+      </figure>
+    </div>
+  </div>-->
+
+  <div class="container">
+    <div class="avatar"></div>
+    <div class="text">
+      <h2>Hello, I'm <b>Huong</b></h2>
+      <div #typedStrings>
+        <p>Front end developer</p>
+        <p>Haha</p>
+      </div>
+
+      <span #typed></span>
+    </div>
+  </div>
 </section>
