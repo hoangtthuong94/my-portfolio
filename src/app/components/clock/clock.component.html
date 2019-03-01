@@ -1,0 +1,49 @@
+<div class="clock-wrap">
+  <div id="clock">
+    <div class="digit-group">
+      <div class="digit d-flex flex-wrap align-content-end justify-content-center">
+        <div>
+          <div class="digit-number"
+               [ngClass]="item===time[0]? 'highlight': ''"
+               *ngFor="let item of timeElement3Digits">{{item}}</div>
+        </div>
+      </div>
+      <div class="digit">
+        <div class="digit-number"
+             [ngClass]="item===time[1]? 'highlight': ''"
+             *ngFor="let item of timeElement10Digits">{{item}}</div>
+      </div>
+
+    </div>
+    <div class="digit-group">
+      <div class="digit d-flex flex-wrap align-content-end justify-content-center">
+        <div>
+          <div class="digit-number"
+               [ngClass]="item===time[2]? 'highlight': ''"
+               *ngFor="let item of timeElement6Digits">{{item}}</div>
+        </div>
+      </div>
+
+
+      <div class="digit">
+        <div class="digit-number"
+             [ngClass]="item===time[3]? 'highlight': ''"
+             *ngFor="let item of timeElement10Digits">{{item}}</div>
+      </div>
+    </div>
+    <div class="digit-group">
+      <div class="digit d-flex flex-wrap align-content-end justify-content-center">
+        <div>
+          <div class="digit-number"
+               [ngClass]="item===time[4]? 'highlight': ''"
+               *ngFor="let item of timeElement6Digits">{{item}}</div>
+        </div>
+      </div>
+      <div class="digit">
+        <div class="digit-number"
+             [ngClass]="item===time[5]? 'highlight': ''"
+             *ngFor="let item of timeElement10Digits">{{item}}</div>
+      </div>
+    </div>
+  </div>
+</div>

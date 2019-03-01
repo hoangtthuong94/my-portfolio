@@ -1,7 +1,8 @@
 <app-menu></app-menu>
 
-<div class="logo-name">
-  <div class="name">
+<div class="logo-name" [ngClass]="isOpenImage ? '' : 'move-left'">
+  <div class="name"
+       (click)="isOpenImage = !isOpenImage">
     Hương <span></span>
     <br>Hoàng TT
   </div>
@@ -27,5 +28,8 @@
 </div>
 
 <div class="main-content">
-  <div class="photo"></div>
+  <div class="photo" [ngClass]="isOpenImage ? '' : 'close-photo'"></div>
+  <div class="main-page">
+    <app-clock></app-clock>
+  </div>
 </div>

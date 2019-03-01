@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { MainComponent } from './pages/main/main.component';
+import { ClockComponent } from './components/clock/clock.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MainComponent } from './pages/main/main.component';
     HomeComponent,
     MenuComponent,
     AnimationComponent,
-    MainComponent
+    MainComponent,
+    ClockComponent
   ],
   imports: [
     BrowserModule,

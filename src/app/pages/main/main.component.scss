@@ -13,7 +13,13 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 30vh;
+  top: 25vh;
+  z-index: 10;
+  @include transition(left 1s ease-in-out);
+
+  &.move-left {
+    left: 250px;
+  }
 
   .name {
     font-size: 45px;
@@ -75,10 +81,31 @@
 
 .main-content {
   width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
   .photo {
-    width: 50%;
     height: 100vh;
     background: $color-background-gray;
+    width: 50%;
+    @include transition(width 1s ease-in-out);
+
+    &.close-photo {
+      width: 350px;
+    }
+  }
+
+  .main-page {
+    flex: 1;
+    position: relative;
+
+    app-clock {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 320px;
+    }
   }
 }
