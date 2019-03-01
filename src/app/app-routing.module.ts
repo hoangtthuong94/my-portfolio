@@ -6,7 +6,7 @@ import { MainComponent } from './pages/main/main.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
     data: {
       title: 'Homepage',
@@ -20,7 +20,7 @@ const routes: Routes = [
     }
   },
   {
-    path: 'demo',
+    path: '',
     component: MainComponent,
     data: {
       title: 'MainComponent',
