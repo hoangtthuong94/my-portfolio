@@ -31,11 +31,11 @@
   &:not(:last-child) {
     &:after {
       content: ':';
-      font-size: 45px;
+      font-size: 40px;
       position: absolute;
       right: 0;
       line-height: 1;
-      bottom: 0;
+      bottom: 5px;
       width: 20px;
       text-align: center;
     }
@@ -50,6 +50,10 @@
     color: $color-gray;
     transform: rotate(-90deg);
     transition: font-size 200ms, transform 350ms, color 150ms;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
 
     &.highlight {
       color: inherit;
