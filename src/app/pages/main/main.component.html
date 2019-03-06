@@ -30,9 +30,9 @@
 <div class="main-content">
   <div class="photo" [ngClass]="isOpenImage ? '' : 'close-photo'"></div>
   <div class="main-page custom-scroll" [ngClass]="isOpenImage ? '' : 'open-content'">
-    <!--<app-clock></app-clock>-->
+    <app-clock [ngClass]="isOpenImage ? '' : 'hide-clock'"></app-clock>
 
-    <div class="portfolio">
+    <div class="portfolio" [ngClass]="isOpenImage ? '' : 'show-portfolio animated animatedFadeInUp fadeInUp'">
       <section class="introduction">
         <p class="sub-title">Bio</p>
         <h3>I code beautifully simple things, and I love what I do.</h3>
@@ -47,37 +47,90 @@
         </div>
       </section>
 
-      <section>
-        <p class="sub-title">Hobbies</p>
-        <h3>I love all of this... <3</h3>
-        <ul class="hobbies list-unstyled">
-          <li><i class="fas fa-film"></i></li>
-          <li><i class="fas fa-shopping-basket"></i></li>
-          <li><i class="fas fa-plane"></i></li>
-          <li><i class="fas fa-dumbbell"></i></li>
-        </ul>
-      </section>
-
       <section class="skill">
         <p class="sub-title">Skill</p>
         <h3>Front-end technologies:</h3>
         <ul class="list-unstyled">
-          <li>- HTML / HTML5, CSS / CSS3, SASS, LESS</li>
-          <li>- Twitter Bootstrap, Foundation</li>
-          <li>- Javascript, Jquery</li>
-          <li>- Responsive Design</li>
-          <li>- Angular JS, Angular all version</li>
-          <li>- Wordpress</li>
-          <li>- Drupal</li>
-          <li>- HTML email</li>
-          <li>- Newsletter</li>
-        </ul>
+          <li>
+            <img src="../../../assets/images/html.jpg" alt="Html">
+          </li>
 
-        <h3>Other:</h3>
-        <ul class="list-unstyled">
-          <li>- Bitbucket</li>
-          <li>- git</li>
-          <li>- Adobe Photoshop</li>
+          <li>
+            <img src="../../../assets/images/css.png" alt="Css">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/sass.png" alt="Sass">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/bootstrap.svg" alt="Bootstrap">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/js.png" alt="Javascript">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/jquery.jpg" alt="Jquery">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/angular.svg" alt="Angular">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/wordpress.jpg" alt="Wordpress">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/drupal.jpg" alt="Drupal">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/html-email.jpg" alt="HTML email">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/newsletter.png" alt="Newsletter">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/bitbucket.jpg" alt="Bitbucket">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/git.png" alt="Git">
+          </li>
+
+          <li>
+            <img src="../../../assets/images/adobe-photoshop.png" alt="Adobe Photoshop">
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="sub-title">Projects</p>
+
+        <ul class="list-unstyled projects row">
+          <li class="col-md-4 col-sm-6 col-1">
+            <div class="handiplanet"><p>Handiplanet</p></div>
+          </li>
+          <li class="col-md-4 col-sm-6 col-1">
+            <div class="bereglo"><p>Bereglo</p></div>
+          </li>
+          <li class="col-md-4 col-sm-6 col-1">
+            <div class="vieclamxinghiep"><p>ViecLamXiNghiep</p></div>
+          </li>
+          <li class="col-md-4 col-sm-6 col-1">
+            <div class="b4u"><p>B4U</p></div>
+          </li>
+          <li class="col-md-4 col-sm-6 col-1">
+            <div class="ga3a"><p>GA3A</p></div>
+          </li>
+          <li class="col-md-4 col-sm-6 col-1">
+            <div class="quangduc"><p>QuangDuc</p></div>
+          </li>
         </ul>
       </section>
     </div>
