@@ -8,25 +8,19 @@
     </div>
 
     <div class="tools" [ngClass]="isOpenMenu ? 'tools--visible' : 'tools--hidden'">
-      <a href="#introduce" title="introduce">
-        <img class="icon help" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABo
-                AAAAaCAYAAACpSkzOAAABvElEQVRIS6WWjU0DMQyFXyeADaATABMAE1A2gA3oBMAEiAmACYAJoBMAE9BuUCYAfaf4ZB1p4vQsRVf1Yj//PNs
-                3UV1OJJ1JOpS0nw5ay3Q+Jb1IWpRMTQovLyRdO8M1lwC+kfSUu5gDwvOHFEHNeO49EV5K4tnLEIgo7iTtboPgdNaS5pIe7T8PRC3eAgCnkt5
-                TxDx3Cjp2VwZEkT8CkVBwHDIB6LgARGRTSWsDgjUwKyJHKf9R57B9DhAK3xGEQSQ+spr6FCAoCY1r8pMigSgHtcuD97cA1fKMDnTtGZSIQE2
-                jsgCIRturaFBUpCts+s2zxDhvcgnQb9QtqWcpKi16nWIkIgx/uWnB9GhJ3SpaI4DuJV2l6KMEsmR1NYoq9V0eJJCvyLylj/y4aqoPJGqZDB6
-                IbqefSuPHInqVNDNllCBFia70Ef2EcJ+R5XsrR16anMnTzzouRad3Qzfo3/Q2ZfYRS2+sEAkMze4jjM8kPY9Eod9weOOGJe8sPppxG1mlVsn
-                WzZOBlBFRTjACWXDCCGP/MZTtbHTQ+oh05SLhiwYqc0YJQLZdbd+QW/PQJvUoEJRL33WjjXsDfwxhW4mRFht9AAAAAElFTkSuQmCC">
+      <a title="introduce" appScrollToElement="#introduce">
+        <i class="icon fa fa-info-circle" aria-hidden="true"></i>
       </a>
 
-      <a href="#skill">
+      <a appScrollToElement="#skill">
         <i class="icon fas fa-star"></i>
       </a>
 
-      <a href="#project">
+      <a appScrollToElement="#project">
         <i class="icon fas fa-project-diagram"></i>
       </a>
 
-      <a href="#contact">
+      <a appScrollToElement="#contact">
         <i class="icon fas fa-user"></i>
       </a>
 

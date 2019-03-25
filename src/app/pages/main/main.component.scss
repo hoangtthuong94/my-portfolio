@@ -9,7 +9,7 @@
 }
 
 .logo-name {
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   top: 25vh;
@@ -18,6 +18,11 @@
 
   &.move-left {
     left: 250px;
+  }
+
+  i {
+    cursor: pointer;
+    font-size: 30px;
   }
 
   .name {
@@ -86,15 +91,18 @@
 
   .photo {
     height: 100vh;
-    background: $color-background-gray;
     width: 50%;
-    @include transition(width 1s ease-in-out);
+    background: url("../../../assets/images/avatar.jpg") center;
+    background-size: cover;
+    @include transition(all 1s ease-in-out);
     position: absolute;
     top: 0;
     left: 0;
 
     &.close-photo {
-      width: 400px;
+      width: 600px;
+      height: 60vh;
+      top: 40vh;
     }
   }
 }
@@ -110,7 +118,7 @@
   @include transition(width 1s ease-in-out);
 
   &.open-content {
-    width: calc(100vw - 400px);
+    width: calc(100vw - 600px);
   }
 
   app-clock {
@@ -140,29 +148,32 @@
       color: $color-yellow-dark;
     }
 
-    > div {
-      margin: 15px 0 15px 150px;
+    &.introduction{
+      > div {
+        margin: 15px 0 15px 150px;
+      }
     }
   }
 }
 
-.skill {
+.list-skill {
+  .item {
+    background-color: $color-yellow-dark;
+    margin: 5px;
+    padding: 10px 15px;
+    min-width: 150px;
+    text-align: center;
+    color: $color-white;
+  }
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
+  }
 
-    li {
-      width: 80px;
-      height: 80px;
-      border: 10px solid $color-white;
-    }
-
-    img {
-      max-width: 100%;
-      width: 100%;
-    }
+  p {
+    margin: 0;
   }
 }
 

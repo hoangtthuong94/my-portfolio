@@ -1,14 +1,5 @@
 <app-menu></app-menu>
 
-<div class="logo-name" [ngClass]="isOpenImage ? '' : 'move-left'">
-  <div class="name"
-       (click)="isOpenImage = !isOpenImage">
-    Hương <span></span>
-    <br>Hoàng TT
-  </div>
-  <div class="detail">Front end developer <span>//</span></div>
-</div>
-
 <!--<div class="social-link">
   <ul>
     <li>
@@ -26,13 +17,23 @@
   </ul>
 </div>-->
 
+<div class="logo-name" [ngClass]="isOpenImage ? '' : 'move-left'">
+  <div class="name"
+       (click)="isOpenImage = !isOpenImage">
+    Hương <span></span>
+    <br>Hoàng TT <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+  </div>
+  <div class="detail">Front end developer <span>//</span></div>
+</div>
+
 <div class="main-content">
-  <div class="photo" [ngClass]="isOpenImage ? '' : 'close-photo'"></div>
+  <div class="photo" [ngClass]="isOpenImage ? '' : 'close-photo'">
+  </div>
   <div class="main-page custom-scroll" [ngClass]="isOpenImage ? '' : 'open-content'">
     <app-clock [ngClass]="isOpenImage ? '' : 'hide-clock'"></app-clock>
 
     <div class="portfolio" [ngClass]="isOpenImage ? '' : 'show-portfolio animated animatedFadeInUp fadeInUp'">
-      <section class="introduction">
+      <section class="introduction" id="introduction">
         <p class="sub-title">Bio</p>
         <h3>I code beautifully simple things, and I love what I do.</h3>
 
@@ -46,69 +47,135 @@
         </div>
       </section>
 
-      <section class="skill">
+      <section class="skill" id="skill">
         <p class="sub-title">Skill</p>
         <h3>Front-end technologies:</h3>
-        <ul class="list-unstyled">
+        <!--<ul class="list-unstyled">
           <li>
-            <img src="../../../assets/images/html.jpg" alt="Html">
+            <img src="../../../assets/images/html.jpg" alt="Html" title="HTML">
           </li>
 
           <li>
-            <img src="../../../assets/images/css.png" alt="Css">
+            <img src="../../../assets/images/css.png" alt="Css" title="CSS">
           </li>
 
           <li>
-            <img src="../../../assets/images/sass.png" alt="Sass">
+            <img src="../../../assets/images/sass.png" alt="Sass" title="SASS">
           </li>
 
           <li>
-            <img src="../../../assets/images/bootstrap.svg" alt="Bootstrap">
+            <img src="../../../assets/images/bootstrap.svg" alt="Bootstrap" title="Bootstrap">
           </li>
 
           <li>
-            <img src="../../../assets/images/js.png" alt="Javascript">
+            <img src="../../../assets/images/js.png" alt="Javascript" title="Javascript">
           </li>
 
           <li>
-            <img src="../../../assets/images/jquery.jpg" alt="Jquery">
+            <img src="../../../assets/images/jquery.jpg" alt="Jquery" title="Jquery">
           </li>
 
           <li>
-            <img src="../../../assets/images/angular.svg" alt="Angular">
+            <img src="../../../assets/images/angular.svg" alt="Angular" title="Angular">
           </li>
 
           <li>
-            <img src="../../../assets/images/wordpress.jpg" alt="Wordpress">
+            <img src="../../../assets/images/wordpress.jpg" alt="Wordpress" title="Wordpress">
           </li>
 
           <li>
-            <img src="../../../assets/images/drupal.jpg" alt="Drupal">
+            <img src="../../../assets/images/drupal.jpg" alt="Drupal" title="Drupal">
           </li>
 
           <li>
-            <img src="../../../assets/images/html-email.jpg" alt="HTML email">
+            <img src="../../../assets/images/html-email.jpg" alt="HTML email" title="HTML email">
           </li>
 
           <li>
-            <img src="../../../assets/images/newsletter.png" alt="Newsletter">
+            <img src="../../../assets/images/newsletter.png" alt="Newsletter" title="Newsletter">
           </li>
 
           <li>
-            <img src="../../../assets/images/bitbucket.jpg" alt="Bitbucket">
+            <img src="../../../assets/images/bitbucket.jpg" alt="Bitbucket" title="Bitbucket">
           </li>
 
           <li>
-            <img src="../../../assets/images/git.png" alt="Git">
+            <img src="../../../assets/images/git.png" alt="Git" title="Git">
           </li>
 
           <li>
             <img src="../../../assets/images/adobe-photoshop.png" alt="Adobe Photoshop">
           </li>
-        </ul>
+        </ul>-->
+        <div class="list-skill d-flex flex-wrap justify-content-center">
+          <div class="item">
+            <img src="../../../assets/images/psd-html.png" alt="">
+            <p>PSD to HTML</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/html.png" alt="">
+            <p>HTML5</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/css.png" alt="">
+            <p>CSS3</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/js.png" alt="">
+            <p>Javascript</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/jquery.png" alt="">
+            <p>Jquery</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/mobile-website.png" alt="">
+            <p>Responsive web</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/drupal.png" alt="">
+            <p>Drupal</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/wordpress.png" alt="">
+            <p>Wordpress</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/sass.png" alt="">
+            <p>Sass</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/google-api.png" alt="">
+            <p>Google api</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/html-email.png" alt="">
+            <p>Html Email</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/bitbucket.png" alt="">
+            <p>Bitbucket</p>
+          </div>
+
+          <div class="item">
+            <img src="../../../assets/images/git.png" alt="">
+            <p>Git</p>
+          </div>
+        </div>
       </section>
 
-      <section>
+      <section id="project">
         <p class="sub-title">Projects</p>
 
         <ul class="list-unstyled projects row">

@@ -8,6 +8,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { MainComponent } from './pages/main/main.component';
 import { ClockComponent } from './components/clock/clock.component';
+import { ScrollToElementDirective } from './directives/scroll-to-element.directive';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ClockComponent } from './components/clock/clock.component';
     MenuComponent,
     AnimationComponent,
     MainComponent,
-    ClockComponent
+    ClockComponent,
+    ScrollToElementDirective,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
