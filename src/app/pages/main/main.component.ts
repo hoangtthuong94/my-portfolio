@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  isOpenImage = false;
+  isOpenImage = true;
 
   constructor() {
   }
