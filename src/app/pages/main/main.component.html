@@ -17,13 +17,16 @@
   </ul>
 </div>-->
 
-<div class="logo-name" [ngClass]="isOpenImage ? '' : 'move-left'">
-  <div class="name"
-       (click)="isOpenImage = !isOpenImage">
-    Hương <span></span>
-    <br>Hoàng TT <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+<div class="logo-name" [ngClass]="isOpenImage ? '' : 'move'">
+  <div>
+    <div class="name"
+         title="Click me"
+         (click)="isOpenImage = !isOpenImage">
+      Hương <span></span>
+      <br>Hoàng TT <i title="Click me" class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+    </div>
+    <div class="detail">Front end developer <span>//</span></div>
   </div>
-  <div class="detail">Front end developer <span>//</span></div>
 </div>
 
 <div class="main-content">
@@ -50,63 +53,6 @@
       <section class="skill" id="skill">
         <p class="sub-title">Skill</p>
         <h3>Front-end technologies:</h3>
-        <!--<ul class="list-unstyled">
-          <li>
-            <img src="../../../assets/images/html.jpg" alt="Html" title="HTML">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/css.png" alt="Css" title="CSS">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/sass.png" alt="Sass" title="SASS">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/bootstrap.svg" alt="Bootstrap" title="Bootstrap">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/js.png" alt="Javascript" title="Javascript">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/jquery.jpg" alt="Jquery" title="Jquery">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/angular.svg" alt="Angular" title="Angular">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/wordpress.jpg" alt="Wordpress" title="Wordpress">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/drupal.jpg" alt="Drupal" title="Drupal">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/html-email.jpg" alt="HTML email" title="HTML email">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/newsletter.png" alt="Newsletter" title="Newsletter">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/bitbucket.jpg" alt="Bitbucket" title="Bitbucket">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/git.png" alt="Git" title="Git">
-          </li>
-
-          <li>
-            <img src="../../../assets/images/adobe-photoshop.png" alt="Adobe Photoshop">
-          </li>
-        </ul>-->
         <div class="list-skill d-flex flex-wrap justify-content-center">
           <div class="item">
             <img src="../../../assets/images/psd-html.png" alt="">
@@ -179,23 +125,50 @@
         <p class="sub-title">Projects</p>
 
         <ul class="list-unstyled projects row">
-          <li class="col-md-4 col-sm-6 col-1">
+          <li class="col-md-6 col-lg-4 col-sm-4">
             <div class="handiplanet"><p>Handiplanet</p></div>
           </li>
-          <li class="col-md-4 col-sm-6 col-1">
+          <li class="col-md-6 col-lg-4 col-sm-4">
             <div class="bereglo"><p>Bereglo</p></div>
           </li>
-          <li class="col-md-4 col-sm-6 col-1">
+          <li class="col-md-6 col-lg-4 col-sm-4">
             <div class="vieclamxinghiep"><p>ViecLamXiNghiep</p></div>
           </li>
-          <li class="col-md-4 col-sm-6 col-1">
+          <li class="col-md-6 col-lg-4 col-sm-4">
             <div class="b4u"><p>B4U</p></div>
           </li>
-          <li class="col-md-4 col-sm-6 col-1">
+          <li class="col-md-6 col-lg-4 col-sm-4">
             <div class="ga3a"><p>GA3A</p></div>
           </li>
-          <li class="col-md-4 col-sm-6 col-1">
+          <li class="col-md-6 col-lg-4 col-sm-4">
             <div class="quangduc"><p>QuangDuc</p></div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p class="sub-title">Contact</p>
+        <h3>Meet me:</h3>
+        <ul class="contact list-unstyled">
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <div class="contact-title">Email</div>
+            <a href="mailto:hoangtthuong94@gmail.com" target="_top"
+               class="contact-content">hoangtthuong94@gmail.com</a>
+          </li>
+
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <div class="contact-title">Mobile</div>
+            <a href="tel:84397873728" class="contact-content">(+84) 39 78 73 728</a>
+          </li>
+
+          <li>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <div class="contact-title">Facebook</div>
+            <a href="https://www.facebook.com/hoang.huong.16144"
+               target="_blank"
+               class="contact-content">Hoàng Hương</a>
           </li>
         </ul>
       </section>

@@ -16,7 +16,7 @@
   z-index: 10;
   @include transition(left 1s ease-in-out);
 
-  &.move-left {
+  &.move {
     left: 250px;
   }
 
@@ -148,7 +148,7 @@
       color: $color-yellow-dark;
     }
 
-    &.introduction{
+    &.introduction {
       > div {
         margin: 15px 0 15px 150px;
       }
@@ -352,5 +352,177 @@
     right: 0;
     bottom: 0;
     color: $color-yellow;
+  }
+}
+
+.contact {
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+
+    i {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $color-yellow-dark;
+    }
+
+    .contact-title {
+      font-size: 12px;
+    }
+
+    a {
+      color: $color-word;
+
+      &:hover {
+        color: $color-yellow-dark;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-content {
+    .photo {
+      &.close-photo {
+        height: 55vh;
+        top: 45vh;
+        width: 400px;
+      }
+    }
+  }
+
+  .main-page {
+
+    &.open-content {
+      width: calc(100vw - 400px);
+    }
+
+    section {
+      &.introduction {
+        > div {
+          margin-left: 80px;
+        }
+      }
+    }
+  }
+
+  .title-rotate {
+    right: -20px;
+  }
+}
+
+@media (max-width: $min-lg-width) {
+  app-clock, app-menu {
+    display: none;
+  }
+
+  .logo-name {
+
+    .name, .detail {
+      color: $color-white;
+    }
+
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: all 1s ease-out;
+
+    > div {
+      display: inline-block;
+      text-align: left;
+    }
+
+    &.move {
+      padding-top: 10px;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: unset;
+      background: $color-white;
+
+      .name, .detail {
+        color: $color-word;
+      }
+    }
+  }
+
+  .main-content {
+    .photo {
+      width: 100%;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      &.close-photo {
+        height: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .main-page {
+    padding: 15px;
+    top: 150px;
+    width: 100%;
+    height: 0;
+    overflow: unset;
+    transition: height 1s ease-in-out;
+
+    &.open-content {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .projects li > div p {
+    opacity: 1;
+  }
+}
+
+@media (max-width: $min-sm-width) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo-name {
+
+    .name {
+      font-size: 25px;
+    }
+  }
+
+  .main-page {
+    h3 {
+      font-size: 20px;
+    }
+
+    section.introduction > div {
+      margin-left: 15px;
+    }
+  }
+
+  .list-skill {
+    .item {
+      min-width: 133px;
+      padding: 10px;
+    }
+
+    img {
+      height: 45px;
+    }
   }
 }

@@ -108,7 +108,7 @@
 
 .logo-name {
   position: absolute;
-  bottom: 0;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   min-height: 100px;
@@ -147,7 +147,7 @@
   text-align: center;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 90px;
   transform: translateX(-50%);
   z-index: -1;
 }
